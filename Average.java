@@ -1,0 +1,24 @@
+
+public class Average {
+    public static <N extends Number> double average(N[] values) {
+        if (values == null || values.length == 0) {
+            throw new IllegalArgumentException("Array cannot be empty.");
+        }
+
+        double sum = 0;
+
+        for (N value : values) {
+            sum += value.doubleValue();
+        }
+
+        return sum / values.length;
+    }
+
+    public static void main(String[] args) {
+        Integer[] a = {10, 20, 30, 40};
+        Double[] b = {2.5, 3.5, 4.5};
+
+        System.out.println("Integer average: " + average(a));
+        System.out.println("Double average: " + average(b));
+    }
+}
