@@ -1,0 +1,17 @@
+#include<iostream>
+using namepspace std;
+int main()
+{
+    int n;
+    cout<<"enter the size of badge id:"<<endl;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i];
+    }
+    for(int i=0;i<n;i++)
+    {
+        for
+    }
+    
+}
